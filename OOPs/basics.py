@@ -149,4 +149,27 @@ class Child(Parent):
     def __init__(self, x, y, z):
         super().__init__(x, y) # To call the constructor or any method of the Parent we use the super() method which signifies the parent
         self.z  = z
-        
+    
+# Inheritance Summary
+
+        # 1. A class can inherit from other class
+        # 2. Inheritance increases code reusability
+        # 3. Constructors, methods and attributes get inherited to the child class
+        # 4. The parent class doesn't has any access to child class
+        # 5. Private methods and attributes are not accessible in child class
+        # 6. Child class can override the methods and attributes of parent class and this is known as method overriding
+        # 7. Super() is used to call the parent class methods from child class
+
+# Types of Inheritance 
+
+#     1. Single inheritance --> one parent and one Child
+#     2. MultiLevel inheritance  --> grand fathers and grand sons 
+#     3. Hierarchical inheritance --> multiple childs
+#     4. Multiple inheritance -->  multiple parents
+#     5. Hybrid inheritance --> Mix of inheritances
+
+# POLYMORPHISM
+#     --> Can be implemented in python in 3 ways
+#             1. Method overriding --> already seen in inheritance
+#             2. Method overloading --> not possible in pyton but can use default args to implement this
+#             3. Operator overloading --> using magic methods such as __add__, __sub__, etc
