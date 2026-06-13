@@ -205,4 +205,16 @@ class Ex:
     #destructor
     def __del__(self):
         pass
-    
+
+#Dir
+    # - it is used to list down all the methods and attributes present in a class
+        
+t = Ex()
+
+print (dir(t))
+
+### As we know that python changes the name of private varibles in the memory, this is known as name mangling
+
+
+isinstance(t,Ex) #--> tells weather t is an object of Ex or not
+issubclass(a,b) #--> tells weather a is child class of b or not
