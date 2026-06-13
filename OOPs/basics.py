@@ -173,3 +173,25 @@ class Child(Parent):
 #             1. Method overriding --> already seen in inheritance
 #             2. Method overloading --> not possible in pyton but can use default args to implement this
 #             3. Operator overloading --> using magic methods such as __add__, __sub__, etc
+
+# ABSTRACTION
+
+#     - When the end user doesn't knows the underlying implementation of the functionlity, this is known as abstarction.
+    #   - We can make an object of an abstract class 
+# Ex:
+
+from abc import ABC, abstractmethod
+
+class dog(ABC):
+
+    def __init__(self):
+        self.__a = 1
+
+    @abstractmethod
+    def security(self):
+        pass
+
+class something(dog):
+
+    def security(self):
+        return 'something'
