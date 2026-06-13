@@ -195,3 +195,14 @@ class something(dog):
 
     def security(self):
         return 'something'
+    
+#Destructor
+
+class Ex:
+    def __init__(self):
+        pass
+    
+    #destructor
+    def __del__(self):
+        pass
+    
